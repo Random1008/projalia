@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les microcontrôleurs — ESP32</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <nav class="menu">
+      <a class="marque" href="index.html">
+        <span class="logo"><span class="logo-point"></span></span>
+        <span>Micro.contrôleurs</span>
+      </a>
+
+      <button class="burger" id="bouton-menu" aria-label="Ouvrir le menu">
+        <span class="icone icone-menu"></span>
+      </button>
+
+      <div class="liens" id="liens">
+        <a href="index.html">Accueil</a>
+        <a href="esp32.html" aria-current="page">ESP32</a>
+        <a href="arduino.html">Arduino</a>
+        <a href="raspberry-pi.html">Raspberry Pi</a>
+        <a href="a-propos.html">À propos</a>
+      </div>
+    </nav>
+    <div class="trait"></div>
+  </header>
+
+  <main class="contenu page-interne">
+    <p class="surtitre">Microcontrôleur</p>
+    <h1 class="titre-page">ESP32</h1>
+    <br>
+    <section class="grille-2">
+
+      <article class="carte carte-fiche">
+        <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+        <img src="images/ESP32page.png" class="image photo-3-2" alt="">
+        <div class="texte-fiche">
+          <div class="etiquette">Objets connectés</div>
+          <h3 class="titre-carte">ESP32</h3>
+          <p class="carte-texte carte-texte-14">Une carte avec Wi-Fi et Bluetooth.</p>
+          <div class="etiquettes">
+            <span class="tag">Breadboard</span>
+            <span class="tag">Ecran 0.96 pouce OLED</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Jumper wear</span>
+          </div>
+          <p>Composant de l'appareil</p>
+          <ul class="liste">
+            <li>CPU ESP32 Xtensa LX6 Dual-Core</li>
+            <li>Carte mère ESP32 DevKit</li>
+            <li>RAM 520 Ko SRAM interne</li>
+            <li>Stockage 4 Mo</li>
+            <li>Wi-Fi 2,4 GHz 802.11 b/g/n</li>
+            <li>Bluetooth BLE 4.2</li>
+            <li>Alimentation USB 5 V, régulateur 3,3 V</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="carte carte-projet">
+        <div class="etiquette">Projet · ESP32</div>
+        <h4 class="titre-carte">mini robot</h4>
+        <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+        <img src="images/ESP32project.png" class="image photo-8 photo-3-2" alt="">
+        <p class="carte-texte carte-texte-14"></p>
+        <p>Composants</p>
+        <div class="etiquettes">
+          <span class="tag">ESP32</span>
+          <span class="tag">Moteurs DC avec réducteur</span>
+          <span class="tag">capteur ultra son</span>
+          <span class="tag">capteur infra rouge</span>
+          <span class="tag">Roues compatibles avec les moteurs</span>
+          <span class="tag">Châssis en bois ou plastique</span>
+          <span class="tag">roulette</span>
+          <span class="tag">Driver moteur</span>
+          <span class="tag">Batterie 18650</span>
+          <span class="tag">Support pour batteries 18650</span>
+          <span class="tag">Convertisseur DC-DC 5 V</span>
+          <span class="tag">Interrupteur</span>
+        </div>
+        <p>En savoir plus :</p>
+        <ol class="liste">
+        <li> L'ESP32 reçoit les instruction depuis un appareil tier </li>
+        <li> Le driver contrôle les deux moteurs du robot </li>
+        <li> Le robot execute les instruction reçues </li>
+        <li> Les capteur mesure la distance des obstacles </li>
+        <li> Le robot s'arrête automatiquement lorsqu'un obstacle est détecté </li>
+        </ol>
+      </article>
+
+    </section>
+  </main>
+</div>
+</body>
+</html>

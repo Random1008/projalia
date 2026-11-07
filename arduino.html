@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les microcontrôleurs — Arduino Uno</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <nav class="menu">
+      <a class="marque" href="index.html">
+        <span class="logo"><span class="logo-point"></span></span>
+        <span>Micro.contrôleurs</span>
+      </a>
+
+      <button class="burger" id="bouton-menu" aria-label="Ouvrir le menu">
+        <span class="icone icone-menu"></span>
+      </button>
+
+      <div class="liens" id="liens">
+        <a href="index.html">Accueil</a>
+        <a href="esp32.html">ESP32</a>
+        <a href="arduino.html" aria-current="page">Arduino</a>
+        <a href="raspberry-pi.html">Raspberry Pi</a>
+        <a href="a-propos.html">À propos</a>
+      </div>
+    </nav>
+    <div class="trait"></div>
+  </header>
+
+  <main class="contenu page-interne">
+    <p class="surtitre">Microcontrôleur</p>
+    <h1 class="titre-page">Arduino Uno</h1>
+    <p class="chapeau">La carte idéale pour débuter en électronique, et un projet à réaliser avec elle.</p>
+
+    <section class="grille-2">
+
+      <article class="carte carte-fiche">
+        <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+        <img src="images/arduinopage.png" class="image photo-3-2" alt="">
+        <div class="texte-fiche">
+          <div class="etiquette">Pour débuter</div>
+          <h3 class="titre-carte">Arduino Uno</h3>
+          <p class="carte-texte carte-texte-14">La carte idéale pour apprendre l'électronique. Elle se programme facilement et possède une très grande communauté.</p>
+          <div class="etiquettes">
+            <span class="tag">Allumer des LED</span>
+            <span class="tag">Lire des capteurs</span>
+            <span class="tag">Projets simples</span>
+          </div>
+          <p>Composant de l'appareil</p>
+          <ul class="liste">
+          <li>Puce : ATmega328P à 16 MHz</li>
+          <li>14 broches numériques, 6 analogiques</li>
+          <li>Langage : C/C++ (logiciel Arduino IDE)</li>
+          <li>Pas de Wi-Fi intégré</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="carte carte-projet">
+        <div class="etiquette">Projet · Arduino Uno</div>
+        <h4 class="titre-carte">Éclairage automatique</h4>
+        <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+        <img src="images/arduinoproject.png" class="image photo-8 photo-3-2" alt="">
+        <p class="carte-texte carte-texte-14">Un scanner RFID pour securiser les donner ou un acces a une piece donner.</p>
+        <p>Composants</p>
+        <div class="etiquettes">
+          <span class="tag">Arduino Uno</span>
+          <span class="tag">Wi-Fi module</span>
+          <span class="tag">RFID scanner</span>
+          <span class="tag">RFID card</span>
+          <span class="tag">Breadboard</span>
+        </div>
+        <p>En savoir plus :</p>
+        <ol class="liste">
+        <li> L'ESP32 communique avec le lecteur RFID </li>
+        <li> Le scanner détecte la carte RFID. </li>
+        <li> L'ESP32 récupère l'UID de la carte. </li>
+        <li> Le système peut reconnaître les cartes enregistrées. </li>
+        <li> Autorise l'acces ou non a l'utilisateur </li>
+        </ol>
+      </article>
+
+    </section>
+  </main>
+</div>
+</body>
+</html>

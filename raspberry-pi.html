@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les microcontrôleurs — Raspberry Pi 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <nav class="menu">
+      <a class="marque" href="index.html">
+        <span class="logo"><span class="logo-point"></span></span>
+        <span>Micro.contrôleurs</span>
+      </a>
+
+      <button class="burger" id="bouton-menu" aria-label="Ouvrir le menu">
+        <span class="icone icone-menu"></span>
+      </button>
+
+      <div class="liens" id="liens">
+        <a href="index.html">Accueil</a>
+        <a href="esp32.html">ESP32</a>
+        <a href="arduino.html">Arduino</a>
+        <a href="raspberry-pi.html" aria-current="page">Raspberry Pi</a>
+        <a href="a-propos.html">À propos</a>
+      </div>
+    </nav>
+    <div class="trait"></div>
+  </header>
+
+  <main class="contenu page-interne">
+    <p class="surtitre">Microcontrôleur</p>
+    <h1 class="titre-page">Raspberry Pi 4</h1>
+    <p class="chapeau">Un mini-ordinateur programmable en Python, et un projet à réaliser avec lui.</p>
+
+    <section class="grille-2">
+
+      <article class="carte carte-fiche">
+        <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+        <img class="image photo-3-2" alt="">
+        <div class="texte-fiche">
+          <div class="etiquette">Programmation</div>
+          <h3 class="titre-carte">Raspberry Pi 4</h3>
+          <p class="carte-texte carte-texte-14">Un vrai mini-ordinateur avec ses broches GPIO. Il se programme en Python et relie facilement code et électronique.</p>
+          <div class="etiquettes">
+            <span class="tag">Projets électroniques</span>
+            <span class="tag">Capteurs</span>
+            <span class="tag">Python</span>
+          </div>
+          <p>Composant de l'appareil</p>
+          <ul class="liste">
+          <li>Processeur quatre cœurs à 1,5 GHz</li>
+          <li>40 broches GPIO</li>
+          <li>Système Linux (Raspberry Pi OS), langage Python</li>
+          <li>Wi-Fi, Bluetooth, USB et sorties HDMI</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="carte carte-projet">
+        <div class="etiquette">Projet · Raspberry Pi 4</div>
+        <h4 class="titre-carte">Détecteur de mouvement</h4>
+        <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+        <img class="image photo-8 photo-3-2" alt="">
+        <p class="carte-texte carte-texte-14">Un buzzer sonne et une LED s'allume lorsqu'une personne passe devant le capteur.</p>
+        <p>Composants</p>
+        <div class="etiquettes">
+          <span class="tag">Raspberry Pi 4</span>
+          <span class="tag">Capteur PIR</span>
+          <span class="tag">Buzzer</span>
+          <span class="tag">LED</span>
+        </div>
+        <p>En savoir plus :</p>
+        <ol class="liste">
+        <li>Le capteur PIR détecte la chaleur d'un corps en mouvement.</li>
+        <li>Un programme Python lit le signal sur une broche GPIO.</li>
+        <li>Il déclenche le buzzer et la LED pendant 3 secondes.</li>
+        </ol>
+      </article>
+
+    </section>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les microcontrôleurs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <nav class="menu">
+      <a class="marque" href="index.html">
+        <span class="logo"><span class="logo-point"></span></span>
+        <span>Micro.contrôleurs</span>
+      </a>
+
+      <button class="burger" id="bouton-menu" aria-label="Ouvrir le menu">
+        <span class="icone icone-menu"></span>
+      </button>
+
+      <div class="liens" id="liens">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="esp32.html">ESP32</a>
+        <a href="arduino.html">Arduino</a>
+        <a href="raspberry-pi.html">Raspberry Pi</a>
+        <a href="a-propos.html">À propos</a>
+      </div>
+    </nav>
+    <div class="trait"></div>
+  </header>
+
+  <main class="contenu">
+
+    <section class="hero">
+      <div class="hero-texte">
+        <p class="surtitre">Projet NSI · Électronique</p>
+        <h1 class="hero-titre">Les microcontrôleurs</h1>
+        <p class="accroche">Un microcontrôleur est un mini ordinateur réuni sur une seule carte : le processeur, la mémoire et les broches.</p>
+        <a class="bouton bouton-violet bouton-grand" href="#appareils">
+          Découvrir les microcontrôleurs
+          <span class="icone icone-18 icone-fleche"></span>
+        </a>
+      </div>
+
+      <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+      <img class="image photo-14 photo-4-3" src="images/3-microcontroleurs.png" alt="Un ESP32, un Arduino Uno et un Raspberry Pi 4 posés côte à côte">
+    </section>
+
+    <div class="trait"></div>
+
+    <section class="bloc">
+      <p class="surtitre">Utilisations</p>
+      <h2 class="titre-bloc">À quoi servent-ils ?</h2>
+      <p class="sous-titre">Quatre grands domaines où l'on retrouve des microcontrôleurs.</p>
+
+      <div class="grille-4">
+        <div class="carte">
+          <span class="pastille"><span class="icone icone-horloge"></span></span>
+          <div class="carte-titre espace-haut">Automatiser des appareils</div>
+          <p class="carte-texte">Allumer une lampe, arroser une plante ou ouvrir un portail sans intervention d'une personne.</p>
+        </div>
+        <div class="carte">
+          <span class="pastille"><span class="icone icone-soleil"></span></span>
+          <div class="carte-titre espace-haut">Faire des capteurs</div>
+          <p class="carte-texte">Mesurer la température, la lumière, l'humidité, détecter un mouvement, un depart de flamme...</p>
+        </div>
+        <div class="carte">
+          <span class="pastille"><span class="icone icone-engrenages"></span></span>
+          <div class="carte-titre espace-haut">cree des robots </div>
+          <p class="carte-texte">Faire bouger un robot a distance a l'aide d'un moteur ou d'une manette a distance.</p>
+        </div>
+        <div class="carte">
+          <span class="pastille"><span class="icone icone-globe"></span></span>
+          <div class="carte-titre espace-haut">Objets connectés</div>
+          <p class="carte-texte">Envoyer des données sur Internet par Wi-Fi ou Bluetooth, et les consulter à distance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="appareils" class="bloc-cartes">
+      <p class="surtitre">Les cartes</p>
+      <h2 class="titre-cartes">Trois microcontrôleurs</h2>
+
+      <div class="grille-3">
+        <a href="esp32.html" class="carte carte-lien">
+          <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+          <img src="images/ESP32.png" class="image photo-4-3" alt="">
+          <div class="bas-carte">
+            <div class="carte-titre">ESP32</div>
+            <span class="icone icone-18 icone-fleche fleche-carte"></span>
+          </div>
+        </a>
+        <a href="arduino.html" class="carte carte-lien">
+          <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+          <img src="images/arduino.png" class="image photo-4-3" alt="">
+          <div class="bas-carte">
+            <div class="carte-titre">Arduino Uno</div>
+            <span class="icone icone-18 icone-fleche fleche-carte"></span>
+          </div>
+        </a>
+        <a href="raspberry-pi.html" class="carte carte-lien">
+          <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+          <img src="images/raspberry-pi.png" class="image photo-4-3" alt="">
+          <div class="bas-carte">
+            <div class="carte-titre">Raspberry Pi 4</div>
+            <span class="icone icone-18 icone-fleche fleche-carte"></span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
