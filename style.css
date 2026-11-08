@@ -1,11 +1,5 @@
-/* Feuille de style du site « Les microcontrôleurs ».
-   Une seule feuille pour les 5 pages : accueil, ESP32, Arduino,
-   Raspberry Pi et à propos. */
-
-/* La police Inter vient de Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Les couleurs du site, pour ne pas les répéter partout. */
 :root {
   --fond: #161826;
   --fond-carte: #232532;
@@ -15,8 +9,6 @@
   --gris-800: #3f424d;
   --trait: rgba(233, 233, 237, 0.16);
 }
-
-/* ---------- Bases ---------- */
 
 * { box-sizing: border-box; }
 
@@ -55,8 +47,6 @@ a { color: inherit; text-underline-offset: 3px; }
 :focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; }
 ::selection { background: rgba(145, 132, 217, 0.3); }
 
-/* ---------- La page ---------- */
-
 .page {
   min-height: 100vh;
   background:
@@ -70,10 +60,8 @@ a { color: inherit; text-underline-offset: 3px; }
   padding: 0 24px;
 }
 
-/* Pour les pages intérieures (ESP32, Arduino, Raspberry Pi, à propos). */
 .page-interne { padding: 64px 24px 80px; }
 
-/* Le petit trait qui s'estompe sur les côtés. */
 .trait {
   height: 1px;
   background: linear-gradient(to right,
@@ -82,8 +70,6 @@ a { color: inherit; text-underline-offset: 3px; }
     var(--trait) calc(100% - 48px),
     transparent);
 }
-
-/* ---------- Le menu ---------- */
 
 .entete {
   position: sticky;
@@ -143,7 +129,7 @@ a { color: inherit; text-underline-offset: 3px; }
   justify-content: center;
 }
 
-.burger.ouvert .icone-menu { -webkit-mask-image: url(icons/cross.svg); mask-image: url(icons/cross.svg); }
+.burger.ouvert .icon-7 { -webkit-mask-image: url(icons/cross.svg); mask-image: url(icons/cross.svg); }
 
 .liens {
   display: flex;
@@ -156,9 +142,7 @@ a { color: inherit; text-underline-offset: 3px; }
   font-size: 14px;
 }
 
-/* ---------- Les icônes ---------- */
-
-.icone {
+.icon {
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -171,20 +155,18 @@ a { color: inherit; text-underline-offset: 3px; }
   mask-repeat: no-repeat;
 }
 
-.icone-18 { width: 18px; height: 18px; }
-.icone-16 { width: 16px; height: 16px; }
-
-.icone-horloge { -webkit-mask-image: url(icons/clock.svg); mask-image: url(icons/clock.svg); }
-.icone-soleil { -webkit-mask-image: url(icons/sun.svg); mask-image: url(icons/sun.svg); }
-.icone-engrenages { -webkit-mask-image: url(icons/gears.svg); mask-image: url(icons/gears.svg); }
-.icone-globe { -webkit-mask-image: url(icons/globe.svg); mask-image: url(icons/globe.svg); }
-.icone-info { -webkit-mask-image: url(icons/info.svg); mask-image: url(icons/info.svg); }
-.icone-code { -webkit-mask-image: url(icons/code.svg); mask-image: url(icons/code.svg); }
-.icone-fleche { -webkit-mask-image: url(icons/arrow-right.svg); mask-image: url(icons/arrow-right.svg); }
-.icone-menu { -webkit-mask-image: url(icons/menu.svg); mask-image: url(icons/menu.svg); }
-.icone-croix { -webkit-mask-image: url(icons/cross.svg); mask-image: url(icons/cross.svg); }
-
-/* ---------- Les boutons ---------- */
+.icon-1 { -webkit-mask-image: url(icons/clock.svg); mask-image: url(icons/clock.svg); }
+.icon-2 { -webkit-mask-image: url(icons/sun.svg); mask-image: url(icons/sun.svg); }
+.icon-3 { -webkit-mask-image: url(icons/gears.svg); mask-image: url(icons/gears.svg); }
+.icon-4 { -webkit-mask-image: url(icons/globe.svg); mask-image: url(icons/globe.svg); }
+.icon-5 { -webkit-mask-image: url(icons/info.svg); mask-image: url(icons/info.svg); }
+.icon-6 {
+  width: 18px;
+  height: 18px;
+  -webkit-mask-image: url(icons/arrow-right.svg);
+  mask-image: url(icons/arrow-right.svg);
+}
+.icon-7 { -webkit-mask-image: url(icons/menu.svg); mask-image: url(icons/menu.svg); }
 
 .bouton {
   display: inline-flex;
@@ -211,13 +193,10 @@ a { color: inherit; text-underline-offset: 3px; }
 .bouton-violet:hover { background: rgba(145, 132, 217, 0.12); }
 .bouton-violet:active { background: rgba(145, 132, 217, 0.22); }
 
-/* Le bouton du haut de l'accueil est un peu plus grand. */
 .bouton-grand {
   padding: 11px 18px;
   font-size: 15px;
 }
-
-/* ---------- Les étiquettes (tags) ---------- */
 
 .tag {
   display: inline-flex;
@@ -234,8 +213,6 @@ a { color: inherit; text-underline-offset: 3px; }
   gap: 6px;
 }
 
-/* ---------- Les cartes ---------- */
-
 .carte {
   display: flex;
   flex-direction: column;
@@ -246,22 +223,15 @@ a { color: inherit; text-underline-offset: 3px; }
   box-shadow: 0 0 0 1px var(--gris-800);
 }
 
-/* Une carte qui est un lien (les 3 cartes de l'accueil). */
-.carte-lien {
-  padding: 0;
-  gap: 0;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-/* La carte d'une fiche (ESP32, Arduino, Raspberry Pi). */
+.carte-lien,
 .carte-fiche {
   padding: 0;
   gap: 0;
   overflow: hidden;
 }
 
-/* La carte du projet, sans fond, juste un cadre. */
+.carte-lien { text-decoration: none; }
+
 .carte-projet {
   background: transparent;
   box-shadow: inset 0 0 0 1px var(--trait);
@@ -318,9 +288,6 @@ a { color: inherit; text-underline-offset: 3px; }
 
 .titre-carte { margin: 0; }
 
-/* ---------- Les photos ---------- */
-
-/* Une photo : il suffit de remplir src (le lien) et alt (la description). */
 .image {
   display: block;
   width: 100%;
@@ -328,12 +295,6 @@ a { color: inherit; text-underline-offset: 3px; }
   background: rgba(127, 127, 127, 0.08);
 }
 
-/* Tant qu'il n'y a pas de lien, la photo montre un cadre pointillé. */
-img.image:not([src]) {
-  border: 1.5px dashed rgba(233, 233, 237, 0.35);
-}
-
-/* Une petite photo ronde à gauche d'un nom (page à propos). */
 .avatar {
   width: 48px;
   height: 48px;
@@ -346,14 +307,11 @@ img.image:not([src]) {
   gap: 12px;
 }
 
-/* Les formats et les coins arrondis, à choisir selon l'emplacement. */
 .photo-14 { border-radius: 14px; }
 .photo-8 { border-radius: 8px; }
 
 .photo-4-3 { aspect-ratio: 4 / 3; }
 .photo-3-2 { aspect-ratio: 3 / 2; }
-
-/* ---------- Les sections ---------- */
 
 .surtitre {
   margin: 0 0 12px;
@@ -381,16 +339,12 @@ img.image:not([src]) {
   margin-bottom: 20px;
 }
 
-/* Les deux paragraphes de présentation de l'accueil. */
 .accroche {
   margin: 0 0 12px;
   font-size: 17px;
   text-wrap: pretty;
 }
 
-.accroche + .accroche { margin-bottom: 28px; }
-
-/* Le paragraphe de présentation des pages intérieures. */
 .chapeau {
   margin: 0 0 40px;
   max-width: 560px;
@@ -438,8 +392,6 @@ img.image:not([src]) {
   gap: 16px;
 }
 
-/* ---------- Les listes de caractéristiques ---------- */
-
 .liste {
   margin: 0;
   padding-left: 18px;
@@ -448,23 +400,7 @@ img.image:not([src]) {
   font-size: 14px;
 }
 
-/* ---------- Le pied de page ---------- */
-
-.pied {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 13px;
-}
-
-/* Les liens de la page « à propos ». */
 .liens-sources { display: grid; gap: 4px; }
-
-/* ---------- Sur téléphone ---------- */
 
 @media (max-width: 719.98px) {
   .burger { display: inline-flex; }
