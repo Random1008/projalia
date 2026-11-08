@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les microcontrôleurs — À propos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <nav class="menu">
+      <a class="marque" href="index.html">
+        <span class="logo"><span class="logo-point"></span></span>
+        <span>Micro.contrôleurs</span>
+      </a>
+
+      <button class="burger" id="bouton-menu" aria-label="Ouvrir le menu">
+        <span class="icone icone-menu"></span>
+      </button>
+
+      <div class="liens" id="liens">
+        <a href="index.html">Accueil</a>
+        <a href="esp32.html">ESP32</a>
+        <a href="arduino.html">Arduino</a>
+        <a href="raspberry-pi.html">Raspberry Pi</a>
+        <a href="a-propos.html" aria-current="page">À propos</a>
+      </div>
+    </nav>
+    <div class="trait"></div>
+  </header>
+
+  <main class="contenu page-interne">
+    <p class="surtitre">À propos</p>
+    <h1 class="titre-page">Le projet</h1>
+    <p class="chapeau chapeau-large">Ce site a été réalisé dans le cadre de la spécialité NSI. Son but : expliquer simplement ce qu'est un microcontrôleur et montrer à quoi il sert, avec des exemples concrets.</p>
+
+    <div class="grille-infos">
+      <div class="carte">
+        <span class="icone icone-violet icone-info"></span>
+        <div class="carte-titre">Réalisé par</div>
+        <div class="personne">
+          <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+          <img src="images/pplia.png" class="image avatar" alt="pp de lia">
+          <p class="carte-texte">Nathan [ton nom] (realisateur)</p>
+        </div>
+        <div class="personne">
+          <!-- Photo : mets le lien dans src="images/..." et la description dans alt="..." -->
+          <img src="images/pprandom.png" class="image avatar" alt="pp de random">
+          <p class="carte-texte">Random (fournie les images et quelque infos)</p>
+        </div>
+      </div>
+      <div class="carte">
+        <span class="icone icone-violet icone-globe"></span>
+        <div class="carte-titre">Sources</div>
+        <p class="carte-texte liens-sources">
+          <a href="https://www.arduino.cc" target="_blank">arduino</a>
+          <a href="https://www.espressif.com" target="_blank">ESP32</a>
+          <a href="https://www.raspberrypi.com" target="_blank">raspberry pi</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
