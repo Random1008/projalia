@@ -333,6 +333,19 @@ img.image:not([src]) {
   border: 1.5px dashed rgba(233, 233, 237, 0.35);
 }
 
+/* Une petite photo ronde à gauche d'un nom (page à propos). */
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.personne {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 /* Les formats et les coins arrondis, à choisir selon l'emplacement. */
 .photo-14 { border-radius: 14px; }
 .photo-8 { border-radius: 8px; }
